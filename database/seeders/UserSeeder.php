@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
@@ -18,7 +19,7 @@ class UserSeeder extends Seeder
         'id' => "1",
             'name' => "pgrant",
             'email'=>"email@email.com",
-            'password'=>'$2y$10$avjRe9Ed1iNe3uFX.5UvBOykCBsE7CvJSPehBF4sgYGqSmNqyZdKu',
+                'password'=>Hash::make("password"),
             'type'=>"1",
             "remember_token"=>null,
             "created_at"=>"2021-02-25 14:48:38",
@@ -30,7 +31,7 @@ class UserSeeder extends Seeder
             'id' => "2",
             'name' => "pgrant",
             'email'=>"email2@email.com",
-            'password'=>'$2y$10$avjRe9Ed1iNe3uFX.5UvBOykCBsE7CvJSPehBF4sgYGqSmNqyZdKu',
+            'password'=>Hash::make("password"),
             'type'=>"2",
             "remember_token"=>null,
             "created_at"=>"2021-02-25 14:48:38",
