@@ -17,7 +17,7 @@
                     </b-nav-form>
 
                     <b-nav-form v-if="this.$store.state.token==0">
-                        <b-button size="sm" class="my-2 my-sm-0 bg-success" type="button" @click="search" >Sign In</b-button>
+                  <a href="/signin">      <b-button size="sm" class="my-2 my-sm-0 bg-success" type="button" @click="search" >Sign In</b-button></a>
                     </b-nav-form>
 
                 </b-navbar-nav>

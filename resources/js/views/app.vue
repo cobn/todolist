@@ -22,7 +22,7 @@ Your Todo List
 </span>
                             </li>
                         </ul>
-                        <pagination :data="laravelData" @pagination-change-page="getResults"></pagination>
+                        <pagination :data="laravelData" align="center" @pagination-change-page="getResults" style="margin-top:10px"></pagination>
 
                     </div>
                 </div>

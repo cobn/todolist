@@ -7,7 +7,6 @@
         <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter username">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
@@ -59,7 +58,7 @@ export default {
                         window.location.href = window.location.origin;
                     }
                 }).catch(error => {
-                alert("Email adresiniz veya şifreniz yanlış")
+                swal("Wrong email adress or password")
             });
 
         }
